@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package stt;
+package grpc;
 
 option go_package = "github.com/vito-ai/go-genproto/stt;stt";
 
@@ -185,6 +185,9 @@ message DecoderConfig {
         // ([OggOpus](https://wiki.xiph.org/OggOpus)).
         // `sample_rate_hertz` must be one of 8000, 12000, 16000, 24000, or 48000.
         OGG_OPUS = 8;
+        
+        // Opus encoded audio frames without container
+        OPUS = 9;
 
     }
 
