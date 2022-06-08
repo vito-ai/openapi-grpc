@@ -191,7 +191,10 @@ message DecoderConfig {
 
     }
 
-    int32 sampleRate = 1;
+    int32 sample_rate = 1;
     AudioEncoding encoding = 2;
+    optional bool use_itn= 5;
+    optional bool use_disfluency_filter = 13;
+    optional bool use_profanity_filter = 14;
 }
 
