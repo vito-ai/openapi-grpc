@@ -3,6 +3,9 @@ syntax = "proto3";
 package online_decoder;
 
 option go_package = "github.com/vito-ai/go-genproto/stt;stt";
+option java_multiple_files = true;
+option java_outer_classname = "VitoProto";
+option java_package = "ai.vito.openapi.v1";
 
 // The greeting service definition.
 service OnlineDecoder {
