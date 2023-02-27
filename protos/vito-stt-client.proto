@@ -50,6 +50,8 @@ message DecoderResponse {
         // until the server closes the gRPC connection. This event is only sent if
         // `single_utterance` was set to `true`, and is not used otherwise.
         END_OF_SINGLE_UTTERANCE = 1;
+        START_OF_VAD = 2;
+        END_OF_VAD = 3;
     }
 
     bool error = 1;
