@@ -198,6 +198,8 @@ message DecoderConfig {
 
     int32 sample_rate = 1;
     AudioEncoding encoding = 2;
+    // Model name: 'default' for Korean, 'sommers_ja' for Japanese
+    optional string model_name = 3;
     optional bool use_itn= 5;
     optional bool use_disfluency_filter = 13;
     optional bool use_profanity_filter = 14;
