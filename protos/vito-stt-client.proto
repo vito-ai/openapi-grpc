@@ -203,5 +203,6 @@ message DecoderConfig {
     optional bool use_itn= 5;
     optional bool use_disfluency_filter = 13;
     optional bool use_profanity_filter = 14;
+    repeated string keywords = 23;
 }
 
