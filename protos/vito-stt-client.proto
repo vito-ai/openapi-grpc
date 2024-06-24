@@ -203,6 +203,19 @@ message DecoderConfig {
     optional bool use_itn= 5;
     optional bool use_disfluency_filter = 13;
     optional bool use_profanity_filter = 14;
+    optional RuntimeStreamConfig stream_config = 22;
     repeated string keywords = 23;
 }
 
+message RuntimeStreamConfig {
+    // The default value for max_utter_duration is 12 seconds. 
+    // This parameter sets the maximum length of a single utterance. 
+    // If an utterance exceeds 12 seconds without any silence, it is divided into separate utterances. 
+    optional int32 max_utter_duration = 1;
+
+    // The default value for epd_time is 0.5 seconds. 
+    // If a silence period lasts for more than 0.5 seconds, the final STT result is returned. 
+    // For voice bots, it is recommended to set a duration longer than 0.5 seconds. 
+    // The recommended value range is between 0.5 and 1.0 seconds.
+    optional float epd_time = 3;
+}
