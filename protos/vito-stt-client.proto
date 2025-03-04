@@ -205,6 +205,7 @@ message DecoderConfig {
     optional bool use_profanity_filter = 14;
     optional RuntimeStreamConfig stream_config = 22;
     repeated string keywords = 23;
+    optional string language = 25;
 }
 
 message RuntimeStreamConfig {
