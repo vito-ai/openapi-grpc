@@ -1,1 +1,1 @@
-# openapi-grpc
+https://github.com/rtzr/rtzr-api
